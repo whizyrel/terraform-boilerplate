@@ -30,6 +30,17 @@ EOF
 echo "Initializing Git..."
 ./init-git-hooks.sh
 
+cat << EOF > .gitignore
+**
+!**/*.tf
+!*.md
+!hooks
+!hooks/**/*
+!.gitignore
+!*.tfvars*
+!*.terraform.lock.*
+EOF
+
 echo "Generating content for Terraform Files..."
 
 cat << EOF > versions.tf
