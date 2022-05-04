@@ -170,7 +170,7 @@ resource "random_string" "aws_assume_role_session_name" {
 }
 EOF
 
-cat << EOF > data.tf
+cat << EOF > output.tf
 output "aws_assumed_role_session_name" {
   value = random_string.aws_assume_role_session_name.result
 }
