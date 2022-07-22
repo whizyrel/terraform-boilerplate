@@ -4,7 +4,7 @@ This Shell script generates a boilerplate for Terraform files and Git pre-commit
 
 ## Usage
 
-Simply make executable [main.sh](main.sh) and execute. Kindly note that the scripts below are deleted after generating boilerplate. How I use it is add the repo to the remote of my new project, pull, then execute main.sh. The side effect is you would have to create your own `README.md` file
+Simply make executable [main.sh](main.sh) and execute. Kindly note that the scripts below are deleted after generating boilerplate. How I use it is add the repo to the remote of my new project, pull, then execute main.sh.
 
 ```sh
 # Add git@github.com:whizyrel/terraform-boilerplate.git to remote of my new project
@@ -20,6 +20,8 @@ chmod +x main.sh
 ## Scripts
 
 The following scripts are used:
+
+- [main.sh](main.sh)
 
 - [tf-files.sh](tf-files.sh)
 
